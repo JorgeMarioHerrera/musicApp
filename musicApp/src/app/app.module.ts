@@ -14,6 +14,8 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 // Servicios
 import { SpotifyService } from '././servicios/spotify.service';
 import { NoImagePipe } from './pipes/no-image.pipe';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomSeguroPipe } from './pipes/dom-seguro.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { NoImagePipe } from './pipes/no-image.pipe';
     ArtistaComponent,
     NavbarComponent,
     NoImagePipe,
-    TarjetasComponent
+    TarjetasComponent,
+    LoadingComponent,
+    DomSeguroPipe
     ],
   imports: [
     BrowserModule,
